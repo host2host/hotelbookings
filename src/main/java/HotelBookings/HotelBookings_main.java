@@ -15,11 +15,11 @@ public class HotelBookings_main {
         request.setPomFile( new File( "pom.xml" ));
         request.setGoals( Collections.singletonList( "install" ));
         DefaultInvoker invoker = new DefaultInvoker();
-       /* invoker.setMavenHome(new File(System.getenv("MAVEN_HOME")));
+       invoker.setMavenHome(new File(System.getenv("MAVEN_HOME")));
         try {
            invoker.execute( request );
         } catch (MavenInvocationException e) {
             e.printStackTrace();
-        } */
+        }
     }
 }
